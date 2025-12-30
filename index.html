@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- 🎯 CUSTOMIZATION: Update title with your name and role -->
+    <title>Khadija Belmouden - PHP & JavaScript Developer</title>
+
+        <!-- Essential meta tags for responsive design -->
+    <meta name="description"
+        content="Professional developer portfolio showcasing modern web development skills and projects">
+    <meta name="keywords" content="developer, portfolio, web development, php, javascript, backend, frontend">
+    <meta name="author" content="Khadija Belmouden">
+
+        <!-- Stylesheets -->
+    <link rel="stylesheet" href="styles.css?v=2">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+        <!-- NAVIGATION BAR -->
+        <!-- Fixed navigation with logo, menu items, and theme toggle -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <!-- 🎯 CUSTOMIZATION: Update logo initials -->
+            <div class="nav-logo">KB</div>
+
+            <div class="nav-right">
+                 <!-- Navigation menu - automatically hidden on mobile -->
+                <ul class="nav-menu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+
+                    <!-- Dark/Light mode toggle button -->
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+                    <i class="fas fa-sun" id="theme-icon"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 🏠 HERO SECTION -->
+    <!-- Main landing area with personal info, profile picture, and call-to-action -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <!-- 📝 Hero text content -->
+                <div class="hero-text">
+                    <!-- 🎯 CUSTOMIZATION: Update name with gradient effect -->
+                    <h1 class="hero-title">
+                        <span class="gradient-text">Khadija Belmouden</span>
+                    </h1>
+
+                    <!-- 🎯 CUSTOMIZATION: Update role/title -->
+                    <h2 class="hero-subtitle">Full Stack Developer</h2>
+
+                    <!-- 🎯 CUSTOMIZATION: Update bio description -->
+                    <p class="hero-bio">
+                        Passionate Full Stack Developer focused on creating innovative and scalable web solutions.
+                         I have a strong command of the SDLC, modern frameworks, and best practices (Clean Code, testing).
+                          Versatile and proactive, I bring strong analytical skills
+                         and an Agile/Git mindset to deliver high-quality code within collaborative projects.
+                    </p>
+
+                    <!-- 🔗 Call-to-action buttons -->
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary">View Projects</a>
+                        <a href="#" class="btn btn-secondary" id="download-cv">
+                            <i class="fas fa-download"></i> Download CV
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 🖼️ Hero visual elements -->
+                <div class="hero-visual">
+                    <!-- 📸 Profile picture with animated gradient border -->
+                    <div class="profile-image-container">
+                        <div class="profile-image">
+                            <!-- 🎯 CUSTOMIZATION: Replace with your profile picture -->
+                            <img src="assets/profile-picture.jpg" alt="Khadija Belmouden - PHP & JavaScript Developer"
+                                id="profile-pic">
+                            <!-- Placeholder shown when no image is added -->
+                            <div class="profile-placeholder">
+                                <i class="fas fa-user"></i>
+                                <span>Add Your Photo</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 🎨 Floating tech cards with animations -->
+                    <!-- 🎯 CUSTOMIZATION: Update icons to match your tech stack -->
+                    <div class="floating-card card-1">
+                        <i class="fab fa-php"></i>
+                    </div>
+                    <div class="floating-card card-2">
+                        <i class="fab fa-js-square"></i>
+                    </div>
+                    <div class="floating-card card-3">
+                        <i class="fas fa-database"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- 💼 FEATURED PROJECTS SECTION -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                
+                <!-- PROJECT 1: Company Intranet Portal -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="assets/project1-ecommerce.jpg" alt="Company Intranet Portal" class="project-img">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/Dev-dija17/Company-Intranet-Portal.git" target="_blank" class="project-link">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Company Intranet Portal</h3>
+                        <p>Digital workplace UI solution designed to impress teams, streamline workflows, and launch in days, not months. Built with PHP backend and JavaScript frontend for seamless user experience and efficient team collaboration.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">PHP</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">MySQL</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PROJECT 2: Premium Luxury Booking -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="assets/project2-taskmanager.jpg" alt="Premium Luxury Booking" class="project-img">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/Dev-dija17/Luxury-Booking.git" target="_blank" class="project-link">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Premium Luxury Booking</h3>
+                        <p>A responsive, luxury-grade booking platform built with HTML, CSS, and JavaScript. Features include a sleek landing page, multi-step booking system, and admin dashboard. Designed for high-end service businesses with a focus on conversion, performance, and mobile-first experience.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML5</span>
+                            <span class="tech-tag">CSS3</span>
+                            <span class="tech-tag">JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PROJECT 3: Premium Restaurant Website -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="assets/project3-weather.jpg" alt="Premium Restaurant Website" class="project-img">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/Dev-dija17/Restaurant-Website.git" target="_blank" class="project-link">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Premium Restaurant Website</h3>
+                        <p>A refined, mobile-first website solution for restaurants and cafes. Includes 7 pages with interactive menu, reservations, and gallery — built with clean, responsive HTML, CSS, and JavaScript.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML5</span>
+                            <span class="tech-tag">CSS3</span>
+                            <span class="tech-tag">JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 🛠️ SKILLS & TECHNOLOGIES SECTION -->
+    <!-- Display technical skills organized by category with brown borders -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Skills & Technologies</h2>
+            <div class="skills-grid">
+    <!-- SKILLS & TECHNOLOGIES SECTION -->
+    <!-- Display technical skills organized by category with brown borders -->
+                <div class="skill-category">
+                    <h3>Frontend</h3>
+                    <div class="skill-items">
+                        <!-- 🎯 CUSTOMIZATION: Update skills and icons to match your expertise -->
+                        <div class="skill-item">
+                            <i class="fab fa-js-square"></i>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-html5"></i>
+                            <span>HTML5</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-css3-alt"></i>
+                            <span>CSS3</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-react"></i>
+                            <span>React</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ⚙️ Backend Skills Category -->
+                <div class="skill-category">
+                    <h3>Backend</h3>
+                    <div class="skill-items">
+                        <!-- 🎯 CUSTOMIZATION: Update skills and icons to match your expertise -->
+                        <div class="skill-item">
+                            <i class="fab fa-php"></i>
+                            <span>PHP</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-database"></i>
+                            <span>MySQL</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-laravel"></i>
+                            <span>Express.js</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-server"></i>
+                            <span>Node.js</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 🔧 Tools & Technologies Category -->
+                <div class="skill-category">
+                    <h3>Tools</h3>
+                    <div class="skill-items">
+                        <!-- 🎯 CUSTOMIZATION: Update skills and icons to match your expertise -->
+                        <div class="skill-item">
+                            <i class="fab fa-git-alt"></i>
+                            <span>Git</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-docker"></i>
+                            <span>Docker</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-figma"></i>
+                            <span>Figma</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-aws"></i>
+                            <span>AWS</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> <!- - Experience Timeline -->
+        <section id="experience" class="experience">
+            <div class="container">
+                <h2 class="section-title">Experience Timeline</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-date">2025</div>
+                            <h3>Full stack developer</h3>
+                            <h4>Gisma</h4>
+                            <p>Development of a school management system project including student management, classes, grades, and administrative features.
+                                 The project focuses on organization, data handling, and user-friendly interfaces, providing practical experience in building structured and real-world web applications.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-date">2025 </div>
+                            <h3>Front-end developer</h3>
+                            <p>Experience in creating web projects using JavaScript, React, and Express.js. Development of responsive and user-friendly front-end interfaces with React, along with RESTful APIs and server-side logic using Express.js.
+                                 Hands-on experience gained through academic and personal projects, with a strong focus on full-stack development and modern web technologies.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-date">2024</div>
+                            <h3>Full Stack Developer</h3>
+                            <p>Developed dynamic web applications using PHP backend and JavaScript frontend. Built
+                                responsive user interfaces and optimized database performance for high-traffic
+                                applications.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-date">2023</div>
+                            <h3>Web Developer</h3>
+                            <p>Built custom websites and web applications using PHP, JavaScript, and MySQL. Worked with
+                                various CMS platforms and gained experience in full-stack development.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact/CTA Section -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <div class="contact-content">
+                    <h2 class="section-title">Let's Work Together</h2>
+                    <p class="contact-description">
+                        Ready to bring your ideas to life? I'm always excited to work on new projects
+                        and collaborate with amazing teams. Let's create something extraordinary together.
+                    </p>
+                    <div class="contact-buttons">
+                        <a href="mailto:khadijabelmouden19@gmail.com" id="get-in-touch" class="btn btn-primary">
+                            <i class="fas fa-envelope"></i> Get In Touch
+                        </a>
+                        <a href="#" class="btn btn-secondary" id="download-cv-footer">
+                            <i class="fas fa-download"></i> Download CV
+                        </a>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://github.com/Dev-dija17" target="_blank" class="social-link">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/khadija-belmouden-290b571b7/" target="_blank" class="social-link">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <!-- Twitter link removed -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <p>&copy; 2026 Khadija Belmouden. All rights reserved.</p>
+            </div>
+        </footer>
+
+        <script src="script.js"></script>
+</body>
+
+</html>
