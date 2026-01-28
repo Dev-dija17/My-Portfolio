@@ -194,14 +194,4 @@ window.addEventListener('load', function() {
     }
 });
 
-// GET IN TOUCH BUTTON HANDLER
-// Ensures clicking the Get In Touch button opens the user's mail client,
-// and copies the email to clipboard as a fallback.
-const getInTouchBtn = document.getElementById('get-in-touch');
-if (getInTouchBtn) {
-    getInTouchBtn.addEventListener('click', function (e) {
-        e.preventDefault();
-        const email = 'khadijabelmouden19@gmail.com';
-        alert('the email : ' + email);
-    });
-}
+// Get In Touch: the HTML anchor uses `mailto:` so no JS handler is required.
